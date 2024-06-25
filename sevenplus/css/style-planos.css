@@ -1,0 +1,1514 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    color: var(--fc);
+    width: 80%;
+    margin: auto;
+}
+
+:root{
+    --font: 'Josefin Sans', sans-serif;
+    --bi: url("../img/fundo.png");
+    --bc-primary: #100866;
+    --nbc: #00003F;
+    --bc-secondary: #7059E6;
+    --fc: white;
+    --box-shadow: 10px 10px 10px rgba(198, 198, 198, 0.5);
+    --hover: scale(1.3);
+}
+
+body{
+    background-image: var(--bi);
+    font-family: var(--font);
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1380px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 95px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #nav-bar .logo{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 90%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+    }
+    #page main .central .meio{
+        width: 65%;
+        height: 700px;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+
+
+
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+   
+    
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 20px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 50px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 1rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 100%;
+       height: 100px;
+       float: left;
+       margin-left: 20%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 200px;
+        height: 40px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        margin: auto;
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+
+
+    #page main .central .meio .div{
+        width: 15%;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: var(--fc);
+        float: left;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    #page main .central .meio .div button{
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 350px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -2rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+         width: 200px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .rodape .texto-rodape{
+        width:30%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199.99px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 90px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #nav-bar .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #page main .central .meio{
+        width: 85%;
+        height: 700px;
+        margin-left: auto;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+
+
+
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+   
+    
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 20px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 50px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 1rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 80%;
+       height: 100px;
+       float: left;
+       margin-left: 20%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 200px;
+        height: 40px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        margin: auto;
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+
+
+    #page main .central .meio .div{
+        width: 15%;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: var(--fc);
+        float: left;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    #page main .central .meio .div button{
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 350px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -2rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+         width: 200px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .rodape .texto-rodape{
+        width:30%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
+@media only screen and (min-width: 800px) and (max-width: 1023.99px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 80px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #nav-bar .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #page main .central .meio{
+        width: 100%;
+        height: 700px;
+        margin-left: 2.5rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+
+
+
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+   
+    
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 10px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box1 h2{
+        font-size: 18px;
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 50px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+    #page main .central .meio .bloco .box h2{
+        font-size: 18px;
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 80%;
+       height: 100px;
+       float: left;
+       margin-left: 20%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 200px;
+        height: 40px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+
+
+    #page main .central .meio .div{
+        width: 15%;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: var(--fc);
+        float: left;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    #page main .central .meio .div button{
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 350px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -2rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+         width: 200px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .rodape .texto-rodape{
+        width:30%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
+@media only screen and (min-width: 600px) and (max-width: 799.99px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 50px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #nav-bar .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #page main .central .meio{
+        width: 100%;
+        height: 700px;
+        margin-left: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+
+
+
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+   
+    
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 10px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box1 h2{
+        font-size: 15px;
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+    #page main .central .meio .bloco .box h2{
+        font-size: 15px;
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 80%;
+       height: 100px;
+       float: left;
+       margin-left: 20%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+        overflow: scroll;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        font-size: 15px;
+        
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .favorito .div{
+        width: 10%;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: var(--fc);
+        float: left;
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+
+    #page main .central .meio .favorito .div button{
+        width: 100px;
+        height: auto;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+   
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 250px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -2rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 15px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 30%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+        width: 150px;
+        height: 20px;
+         border-radius: 30px;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+         font-size: 15px;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    footer .rodape .texto-rodape{
+        width:30%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
+@media only screen and (min-width: 480px) and (max-width: 599.99px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 50px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header #nav-bar .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #page main .central .meio{
+        width: 100%;
+        height: 700px;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+
+
+
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+   
+    
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 10px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box1 h2{
+        font-size: 11px;
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+    #page main .central .meio .bloco .box h2{
+        font-size: 11px;
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 80%;
+       height: 100px;
+       float: left;
+       margin-left: 25%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 100px;
+        height: 20px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 11px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+        overflow: scroll;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        font-size: 15px;
+        
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .favorito .div{
+        width: 10%;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: var(--fc);
+        float: left;
+        margin-top: 2rem;
+        font-size: 11px;
+    }
+
+    #page main .central .meio .favorito .div button{
+        width: 70px;
+        height: auto;
+        margin-left: -1rem;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+   
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 250px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -2rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 15px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 30%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+        width: 150px;
+        height: 20px;
+         border-radius: 30px;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 20px;
+         cursor: pointer;
+         font-size: 15px;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+        font-size: 11px;
+    }
+
+    footer .rodape .texto-rodape{
+        width:30%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
+@media only screen and (min-width: 292px) and (max-width: 479.99px){
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    header #nav-bar{
+        width: 100%;
+        height: 50px;
+        background-color: var(--nbc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    header #nav-bar .logo{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #nav-bar .logo img{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        /*margin-top: 1.5rem;*/
+    }
+
+   #page main .central {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #page main .central .meio{
+        width: 100%;
+        height: auto;
+        margin-left: 1.2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        background-color: var(--nbc);
+        box-shadow: var(--box-shadow);
+    }
+    #page main .central .meio h1{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+        padding: 2rem;
+    }
+    #page main .central .meio h1, h3{
+        text-align: center;
+        margin: auto;
+        color: var(--fc);
+    }
+    #page main .central .meio .bloco{
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    #page main .central .meio .bloco .box1{
+        width: 20%;
+        height: 400px;
+        padding: 1rem;
+        text-align: end;
+        line-height: 5rem;
+        float: left;
+        margin: 10px;
+        color: var(--fc);
+    }
+
+    #page main .central .meio .bloco .box1 h2{
+        font-size: 11px;
+    }
+
+    #page main .central .meio .bloco .box{
+        width: 20%;
+        height: 400px;
+        margin: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        line-height: 5rem;
+        float: left;
+        background-color: var(--bc-secondary);
+        box-shadow: var(--box-shadow);
+    }
+    #page main .central .meio .bloco .box h2{
+        font-size: 11px;
+    }
+
+    #page main .central .meio .bloco .box a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .bloco .box:hover{
+        transform: scale(1.1);
+    }
+
+    #page main .central .meio .bloco .botoes-1{
+       width: 80%;
+       height: 100px;
+       float: left;
+       margin-left: 25%;
+
+    }
+
+    #page main .central .meio .bloco .botoes-1 button{
+        width: 100px;
+        height: 20px;
+        border-radius: 30px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 11px;
+        cursor: pointer;
+    }
+    #page main .central .meio .tabela{
+        width:90%;
+        height: auto;
+        margin:auto;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        margin-bottom: 2rem;
+        overflow: scroll;
+    }
+
+    #page main .central .meio .tabela table{
+        width: 90%;
+        font-size: 15px;
+        
+    }
+    #page main .central .meio .tabela table td,th{
+        line-height: 1rem;
+        padding: 1rem;
+    }
+    #page main .central .meio .favorito{
+        width: 100%;
+        margin: auto;
+        float: left;
+        text-align: center;
+        margin-bottom: .25rem;
+    }
+    #page main .central .meio .favorito a{
+        color: var(--fc);
+        text-decoration: none;
+    }
+
+    #page main .central .meio .favorito a:hover{
+        color: var(--bc-secondary);
+    }
+
+    #page main .central .meio .favorito .div{
+        width: 100%;
+        color: var(--fc);
+        float: left;
+        margin-top: 2rem;
+        font-size: 11px;
+    }
+
+    #page main .central .meio .favorito .div button{
+        width: 70px;
+        height: auto;
+        border-radius: 30px;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+   
+
+    #page main .central .meio .botao-pagamento{
+        width: 50%;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 35%;
+    }
+
+    #page main .central .meio .botao-pagamento button{
+        width: 200px;
+         height: auto;
+         border-radius: 30px;
+         margin-left: -3rem;
+         margin-top: 2rem;
+         margin-bottom: 4rem;
+         background-color: var(--bc-secondary);
+         color: var(--fc);
+         font-size: 11px;
+         cursor: pointer;
+    }
+
+    #page main .central .meio .botoes{
+        width: 50%;
+        height: 100px;
+        float: left;
+        margin-left: 25%;
+ 
+     }
+ 
+     #page main .central .meio .botoes button{
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+        margin-top: 2rem;
+        background-color: var(--bc-secondary);
+        color: var(--fc);
+        font-size: 20px;
+        cursor: pointer;
+        font-size: 11px;
+     }
+
+ 
+
+    footer .rodape{
+        width: 100%;
+        background-color: var(--nbc);
+        display: flex;
+        flex-direction: row;
+        font-size: 11px;
+    }
+
+    footer .rodape .texto-rodape{
+        width:50%;
+        margin: auto;
+    }
+
+    footer .rodape .texto-rodape a{
+       text-align: center;
+        text-decoration: none;
+        color: var(--fc);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--bc-secondary);
+    }
+
+    
+
+}
